@@ -1,0 +1,41 @@
+.bt-associado-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #006b33;
+    color: #006b33;
+    padding: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.bt-associado-icon button{
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.bt-associado-icon:hover {
+    background-color: #006b33;
+    /* Fundo verde no hover */
+    color: white;
+    /* Texto branco no hover */
+}
+
+.bt-associado-icon:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.delete-button {
+    border: 1px solid #c62828;
+    color: #c62828;
+}
+
+.delete-button:hover {
+    background-color: #c62828;
+    color: white;
+}

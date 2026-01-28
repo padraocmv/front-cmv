@@ -1,0 +1,12 @@
+.icones-buttons-start button {
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer !important;
+}
+
+.button-custom-close {
+    background-color: white;
+    align-items: center;
+    color: #9A0000;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+  }

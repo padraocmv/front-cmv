@@ -1,0 +1,73 @@
+@keyframes slideInRight {
+  from {
+    right: -100%;
+    /* Começa fora da tela */
+  }
+
+  to {
+    right: 0;
+    /* Move para a posição correta */
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    right: 0;
+    /* Começa na posição correta */
+  }
+
+  to {
+    right: -100%;
+    /* Move para fora da tela */
+  }
+}
+
+.modal-lateral {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  width: 65%;
+  z-index: 9999;
+  transition: right 0.5s ease;
+  /* Adiciona uma transição para suavizar a animação */
+}
+
+.modal-lateral.open {
+  right: 0;
+}
+
+.modal-lateral.closing {
+  right: -100%;
+  /* Força a modal a mover para fora da tela durante a transição de fechamento */
+}
+
+.modal-lateral .modal-content {
+  padding: 20px;
+}
+
+.modal-content {
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.modal-content button {
+  color: var(--verde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7%;
+  background-color: var(--cinza-leve);
+  cursor: pointer;
+}
+
+.modal-content h1 {
+  font-family: 700;
+  max-width: 70%;
+
+  color: var(--verde);
+  font-size: 15px;
+}

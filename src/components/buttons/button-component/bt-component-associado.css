@@ -1,0 +1,40 @@
+.button-associado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #006b33;
+    color: #006b33;
+    background-color: white;
+    border-radius: 0.375rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.button-associado:hover {
+    background-color: #006b33;
+    color: white;
+}
+
+.button-associado:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.active-bt {
+    border-bottom: 4px solid yellow;
+}
+
+.icon-start-bt,
+.icon-end-bt {
+    position: relative;
+    top: 2px;
+}
+
+.icon-start-bt {
+    margin-right: 0.5rem;
+}
+
+.icon-end-bt {
+    margin-left: 0.5rem;
+}
